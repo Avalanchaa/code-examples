@@ -1,0 +1,16 @@
+{
+  "expected_update_period_in_days": "2",
+  "url": "https://www.ted.com/topics/transportation",
+  "type": "html",
+  "mode": "on_change",
+  "extract": {
+    "url": {
+      "xpath": "//*[contains(concat( \" \", @class, \" \" ), concat( \" \", \"h9\", \" \" ))]//a",
+      "value": "@href"
+    },
+    "title": {
+      "xpath": "//*[contains(concat( \" \", @class, \" \" ), concat( \" \", \"h9\", \" \" ))]//a",
+      "value": "normalize-space(.)"
+    }
+  }
+}
